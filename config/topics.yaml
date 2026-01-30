@@ -1,0 +1,116 @@
+# Topic definitions with keywords and weights for relevance scoring
+# Higher weight = more important topic, boosts article scores
+# Articles are scored 1-10; only score >= 6 pass the filter
+
+topics:
+  ai:
+    keywords:
+      - artificial intelligence
+      - machine learning
+      - GPT
+      - LLM
+      - large language model
+      - neural network
+      - deep learning
+      - transformer
+      - OpenAI
+      - Anthropic
+      - Claude
+      - ChatGPT
+      - Gemini
+      - diffusion
+      - generative AI
+    weight: 1.5  # Highest priority
+
+  software:
+    keywords:
+      - programming
+      - software development
+      - framework
+      - open source
+      - API
+      - developer
+      - code
+      - GitHub
+      - Python
+      - JavaScript
+      - TypeScript
+      - Rust
+      - cloud computing
+      - DevOps
+    weight: 1.3
+
+  investment:
+    keywords:
+      - startup
+      - funding
+      - venture capital
+      - VC
+      - IPO
+      - stock market
+      - cryptocurrency
+      - bitcoin
+      - ethereum
+      - Series A
+      - Series B
+      - acquisition
+      - merger
+      - valuation
+    weight: 1.3
+
+  politics:
+    keywords:
+      - election
+      - congress
+      - senate
+      - president
+      - policy
+      - legislation
+      - government
+      - democracy
+      - republican
+      - democrat
+      - white house
+      - supreme court
+    weight: 1.0
+
+  nba:
+    keywords:
+      - NBA
+      - basketball
+      - Lakers
+      - Celtics
+      - Warriors
+      - trade
+      - draft
+      - playoffs
+      - championship
+      - MVP
+      - LeBron
+      - Curry
+      - Durant
+    weight: 1.0
+
+  health:
+    keywords:
+      - health
+      - medicine
+      - medical
+      - disease
+      - treatment
+      - research
+      - clinical trial
+      - FDA
+      - vaccine
+      - therapy
+      - cancer
+      - mental health
+      - nutrition
+    weight: 1.2
+
+# Scoring configuration
+scoring:
+  min_score: 6           # Minimum score to pass filter (1-10)
+  keyword_match_points: 2 # Points per keyword match
+  title_multiplier: 2.0   # Title matches worth more than body
+  max_score: 10          # Cap score at this value

@@ -1,0 +1,39 @@
+# RSS feed sources grouped by topic
+# Add or remove feeds as needed - run `python src/aggregator.py` to test
+
+rss_feeds:
+  ai:
+    - https://www.theverge.com/ai-artificial-intelligence/rss/index.xml
+    - https://techcrunch.com/tag/artificial-intelligence/feed/
+    - https://openai.com/blog/rss/
+    - https://www.deepmind.com/blog/rss.xml
+
+  software:
+    - https://news.ycombinator.com/rss
+    - https://github.blog/feed/
+    - https://stackoverflow.blog/feed/
+
+  finance:
+    - https://www.reuters.com/business/finance/rss
+    - https://feeds.bloomberg.com/markets/news.rss
+
+  politics:
+    - https://www.reuters.com/world/rss
+    - https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml
+
+  nba:
+    - https://www.espn.com/espn/rss/nba/news
+    - https://www.cbssports.com/rss/headlines/nba/
+
+  health:
+    - https://www.nature.com/nature.rss
+    - https://rss.sciencedaily.com/health_medicine.xml
+
+# NewsAPI configuration (disabled by default)
+# Enable when you have an API key in .env
+news_api:
+  enabled: false
+  queries:
+    - "artificial intelligence"
+    - "startup funding"
+    - "NBA trades"

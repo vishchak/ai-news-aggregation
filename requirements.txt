@@ -1,0 +1,13 @@
+# Core dependencies
+feedparser==6.0.10      # RSS feed parsing
+requests==2.31.0        # HTTP client for Ollama API
+beautifulsoup4==4.12.2  # HTML parsing (for future full-content extraction)
+python-dotenv==1.0.0    # Load environment variables from .env
+pyyaml==6.0.1           # Parse config YAML files
+rapidfuzz==3.6.1        # Fuzzy string matching for article deduplication
+
+# Development and testing
+pytest==8.0.0           # Test framework
+pytest-mock==3.12.0     # Mocking utilities for tests
+black==24.1.0           # Code formatting
+flake8==7.0.0           # Linting
