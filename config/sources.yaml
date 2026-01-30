@@ -1,6 +1,11 @@
 # RSS feed sources grouped by topic
 # Add or remove feeds as needed - run `python src/aggregator.py` to test
 
+# Aggregator settings
+settings:
+  freshness_hours: 24       # Only include articles from last N hours
+  max_articles_per_feed: 50 # Max articles to fetch from each feed
+
 rss_feeds:
   ai:
     - https://www.theverge.com/ai-artificial-intelligence/rss/index.xml
