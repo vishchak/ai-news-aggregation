@@ -1,5 +1,5 @@
 # Core dependencies
-feedparser==6.0.10      # RSS feed parsing
+feedparser>=6.0.12      # RSS feed parsing (6.0.12+ for Python 3.13)
 requests==2.31.0        # HTTP client for APIs
 beautifulsoup4==4.12.2  # HTML parsing
 python-dotenv==1.0.0    # Load environment variables from .env
