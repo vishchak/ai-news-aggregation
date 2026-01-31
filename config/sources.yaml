@@ -1,5 +1,5 @@
 # RSS feed sources grouped by topic
-# Add or remove feeds as needed - run `python src/aggregator.py` to test
+# Focused on: AI/ML, Software Engineering, Startups/VC, Tech Business
 
 # Aggregator settings
 settings:
@@ -7,38 +7,49 @@ settings:
   max_articles_per_feed: 50 # Max articles to fetch from each feed
 
 rss_feeds:
+  # AI & Machine Learning (free sources)
   ai:
     - https://www.theverge.com/ai-artificial-intelligence/rss/index.xml
     - https://techcrunch.com/tag/artificial-intelligence/feed/
     - https://openai.com/blog/rss/
     - https://www.deepmind.com/blog/rss.xml
+    - https://huggingface.co/blog/feed.xml
+    - https://lilianweng.github.io/index.xml          # Lil'Log - ML research
+    - https://www.marktechpost.com/feed/              # AI research news
+    - https://thesequence.substack.com/feed           # ML newsletter
 
+  # Software Engineering & Dev Tools
   software:
     - https://news.ycombinator.com/rss
     - https://github.blog/feed/
     - https://stackoverflow.blog/feed/
+    - https://blog.pragmaticengineer.com/rss/         # Pragmatic Engineer
+    - https://martinfowler.com/feed.atom              # Martin Fowler
+    - https://www.infoq.com/feed/                     # InfoQ
+    - https://blog.bytebytego.com/feed                # System Design & Architecture
 
+  # Startups, VC & Tech Business
+  startups:
+    - https://techcrunch.com/category/startups/feed/
+    - https://sifted.eu/feed                          # EU startups
+    - https://avc.com/feed/                           # Fred Wilson's blog
+    - https://www.newcomer.co/feed                    # VC/startup news
+
+  # Finance & Investment (free sources only)
   finance:
     - https://www.reuters.com/business/finance/rss
-    - https://feeds.bloomberg.com/markets/news.rss
-
-  politics:
-    - https://www.reuters.com/world/rss
-    - https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml
-
-  nba:
-    - https://www.espn.com/espn/rss/nba/news
-    - https://www.cbssports.com/rss/headlines/nba/
-
+    - https://feeds.feedburner.com/zaborovpg         # Fintech news
+    - https://seekingalpha.com/market_currents.xml   # Market updates
+    - https://www.investors.com/category/investing/feed/ # IBD - Growth stocks & CAN SLIM signals
+    - https://www.barrons.com/feed/market-data         # Barron's - Market trends & stock picks
+    - https://www.gurufocus.com/rss.php                # Value investing & insider trade tracking
+    - https://www.fool.com/investing-news/feed/        # The Motley Fool - Individual company analysis
+    - https://www.investing.com/rss/stock_market_analysis.rss # Technical/Fundamental predictions
+    - https://www.netinterest.co/feed                  # Net Interest (The business of finance)
+    - https://www.ft.com/?format=rss                   # Financial Times - Global macro context
+  
+  # Health & Biohacking (Evidence-Based Longevity)
   health:
-    - https://www.nature.com/nature.rss
-    - https://rss.sciencedaily.com/health_medicine.xml
-
-# NewsAPI configuration (disabled by default)
-# Enable when you have an API key in .env
-news_api:
-  enabled: false
-  queries:
-    - "artificial intelligence"
-    - "startup funding"
-    - "NBA trades"
+    - https://peterattiamd.com/feed/                   # Peter Attia (Longevity/Medicine)
+    - https://www.hubermanlab.com/feed/                # Huberman Lab (Neuroscience/Biohacking)
+    - https://www.levels.com/blog/feed/                # Metabolic health & data-driven nutrition
