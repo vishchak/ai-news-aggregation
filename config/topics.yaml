@@ -154,7 +154,7 @@ topics:
 
 # Scoring configuration
 scoring:
-  min_score: 6           # Minimum score to pass filter (1-10)
+  min_score: 5           # Minimum score to pass filter (1-10)
   keyword_match_points: 2 # Points per keyword match
   title_multiplier: 2.0   # Title matches worth more than body
   max_score: 10          # Cap score at this value

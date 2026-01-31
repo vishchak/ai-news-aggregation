@@ -9,14 +9,15 @@ settings:
 rss_feeds:
   # AI & Machine Learning (free sources)
   ai:
-    - https://www.theverge.com/ai-artificial-intelligence/rss/index.xml
     - https://techcrunch.com/tag/artificial-intelligence/feed/
-    - https://openai.com/blog/rss/
     - https://www.deepmind.com/blog/rss.xml
     - https://huggingface.co/blog/feed.xml
     - https://lilianweng.github.io/index.xml          # Lil'Log - ML research
     - https://www.marktechpost.com/feed/              # AI research news
     - https://thesequence.substack.com/feed           # ML newsletter
+    - https://blog.research.google/feeds/posts/default # Google AI Blog
+    - https://www.bensbites.com/feed                  # Ben's Bites newsletter
+    - https://simonwillison.net/atom/everything/      # Simon Willison - LLM tools
 
   # Software Engineering & Dev Tools
   software:
@@ -35,21 +36,18 @@ rss_feeds:
     - https://avc.com/feed/                           # Fred Wilson's blog
     - https://www.newcomer.co/feed                    # VC/startup news
 
-  # Finance & Investment (free sources only)
+  # Finance & Investment (verified working feeds)
   finance:
-    - https://www.reuters.com/business/finance/rss
-    - https://feeds.feedburner.com/zaborovpg         # Fintech news
     - https://seekingalpha.com/market_currents.xml   # Market updates
-    - https://www.investors.com/category/investing/feed/ # IBD - Growth stocks & CAN SLIM signals
-    - https://www.barrons.com/feed/market-data         # Barron's - Market trends & stock picks
-    - https://www.gurufocus.com/rss.php                # Value investing & insider trade tracking
-    - https://www.fool.com/investing-news/feed/        # The Motley Fool - Individual company analysis
-    - https://www.investing.com/rss/stock_market_analysis.rss # Technical/Fundamental predictions
-    - https://www.netinterest.co/feed                  # Net Interest (The business of finance)
-    - https://www.ft.com/?format=rss                   # Financial Times - Global macro context
+    - https://www.netinterest.co/feed                # Net Interest - finance business
+    - https://www.ft.com/?format=rss                 # Financial Times
+    - https://finshots.in/feed                       # Finshots - daily finance explainers
+    - https://stratechery.com/feed/                  # Stratechery - tech/business analysis
+    - https://www.axios.com/feeds/feed.rss           # Axios - business news
+    - https://abnormalreturns.com/feed/              # Abnormal Returns - investing links
   
   # Health & Biohacking (Evidence-Based Longevity)
   health:
     - https://peterattiamd.com/feed/                   # Peter Attia (Longevity/Medicine)
-    - https://www.hubermanlab.com/feed/                # Huberman Lab (Neuroscience/Biohacking)
-    - https://www.levels.com/blog/feed/                # Metabolic health & data-driven nutrition
+    - https://chriskresser.com/feed/                  # Chris Kresser - functional medicine
+    - https://www.marksdailyapple.com/feed/           # Mark's Daily Apple - primal health
